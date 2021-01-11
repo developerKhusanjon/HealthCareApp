@@ -17,9 +17,8 @@ public class HealthCareAppApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController");
 
-		String getString = myController.getGreeting();
-
-		System.out.println(getString);
+		System.out.println("\n -----Primary Bean based controller");
+		System.out.println(myController.getGreeting());
 
 		System.out.println("\n ----Property based controller");
 		PropertyBasedController propertyBasedController = (PropertyBasedController) ctx.getBean("propertyBasedController");
